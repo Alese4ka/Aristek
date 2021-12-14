@@ -171,6 +171,7 @@ input[placeholder] {
     width: 28rem;
   }
   .tasks__completed {
+    margin-top: 3rem;
     width: 28rem;
   }
   .main-item {
