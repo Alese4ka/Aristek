@@ -42,8 +42,6 @@ function createTask(){
   div.innerHTML = inputTask.value;
   div.style.backgroundImage = 'url(./img/delete.svg)';
   mainDiv.appendChild(div);
-
-  tasks.push(mainDiv);
   
   container.className = 'tasks__to-do__list-item';
 
