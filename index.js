@@ -30,7 +30,7 @@ function createTask(){
   let div = document.createElement('div');
   div.className = 'item';
   div.innerHTML = inputTask.value;
-  div.style.backgroundImage = 'url(./assets/img/delete.svg)';
+  div.style.backgroundImage = 'url(./img/delete.svg)';
   mainDiv.appendChild(div);
 
   container.className = 'tasks__to-do__list-item';
