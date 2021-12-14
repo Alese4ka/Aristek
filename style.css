@@ -59,7 +59,7 @@ h1 {
 /**/
 .tasks {
   display: grid;
-  grid-template-columns: 3.75rem 56.25rem 32.5rem;
+  grid-template-columns: 3.75rem 56.25rem 44rem;
   grid-auto-rows: 5rem;
   grid-gap: 1rem;
 }
@@ -72,10 +72,6 @@ h1 {
 }
 .tasks__sidebar__img {
   margin-top: 1.25rem;
-}
-.tasks__adaptive {
-  display: flex;
-  justify-content: space-between;
 }
 .tasks__to-do {
   margin: 1.25rem;
@@ -168,9 +164,8 @@ input[placeholder] {
 }
 
 @media (max-width: 31.25rem) {
-  .tasks__adaptive {
-    display: block;
-    width: 28rem;
+  .tasks {
+    grid-auto-flow: column;
   }
   .tasks__to-do {
     width: 28rem;
