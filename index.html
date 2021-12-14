@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>To-Do List</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <div class="header">
+          <div class="header__logo">
+            <img src="assets/img/logo.svg" alt="logo">
+            <h1>Tasks</h1>
+          </div>
+          <div class="header__person">
+            <p class="header__person__name">Leanne Graham</p>
+            <img class="header__person__img" src="assets/img/person.png" alt="person">
+            <i class="header__person__arrow"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="tasks">
+        <aside class="tasks__sidebar">
+          <img class="tasks__sidebar__img" src="assets/img/tasks.svg" alt="menu">
+        </aside>
+        <div class="tasks__adaptive">
+          <section class="tasks__to-do">
+            <div class="tasks__to-do__field">
+              <input class="tasks__to-do__input" type="text" placeholder="+ Add a task, press Enter to save">
+              <button class="tasks__to-do__btn">Add</button>
+            </div>
+            <p class="tasks__to-do__total">Total: <span class="tasks__to-do__title-total"> </span></p>
+            <p class="tasks__to-do__list">To do (<span class="tasks__to-do__list-total"></span>)</p>
+            <div id="tasks__to-do__list-item"></div>
+          </section>
+          <section class="tasks__completed">
+            <p>Completed () </p>
+            <div id="tasks__completed__list-item"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
